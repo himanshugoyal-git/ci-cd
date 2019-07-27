@@ -2,8 +2,6 @@ before_install: cd travis-ci
 language: ruby
 rvm:
 - 2.3.0
-- jruby-19mode
-- rbx-2
 script:
 - bundle install
 - bundle exec rake db:create
