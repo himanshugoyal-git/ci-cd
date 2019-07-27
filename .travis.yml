@@ -2,12 +2,10 @@ before_install: cd travis-ci
 language: ruby
 rvm:
 - 2.3.0
-- 1.9.3
 - jruby-19mode
 - rbx-2
 script:
  # — bundle install — jobs=3 — retry=3
- — gem update --system OLD_VERSION
  — bundle exec rake db:create
  # — bundle exec rake db:migrate
  # — bundle exec rspec
