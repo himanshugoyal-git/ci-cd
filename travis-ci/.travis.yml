@@ -1,4 +1,5 @@
-before_script: cd travis-ci
+before_script:
+ — cd travis-ci
 language: ruby
 rvm:
 - 2.0.0
